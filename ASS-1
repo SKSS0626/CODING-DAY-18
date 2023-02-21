@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+	int n,t,r,re=0;
+	printf("Enter the number:");
+	scanf("%d",&n);
+	t=n;
+	while(n!=0)
+	{
+		r=n%10;
+		re=re*10+r;
+		n/=10;
+	}
+	if(re==t)
+	printf("GIVEN NUMBER IS A PALLINDROME");
+	else
+	printf("GIVEN NUMBER IS NOT A PALLINDROME");
+}
